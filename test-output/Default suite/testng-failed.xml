@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <parameter name="res" value="1.5"/>
+  <parameter name="x" value="3"/>
+  <parameter name="y" value="0"/>
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="alex.divTest">
+        <methods>
+          <include name="divTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- alex.divTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

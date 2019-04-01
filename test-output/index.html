@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Parallel_tests" class="navigator-link">
+              <span class="suite-name border-failed">Parallel tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Parallel_tests" class="navigator-link ">
+                    <span>D:\Applications\Eclipse_workspace\TestNGExamples\src\alex\smoke.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Parallel_tests" class="navigator-link ">
+                    <span class="test-stats">12 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Parallel_tests" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Parallel_tests" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Parallel_tests" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Parallel_tests" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Parallel_tests" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 5 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Parallel_tests" class="hide-methods failed suite-Parallel_tests"> (hide)</a> <!-- hide-methods failed suite-Parallel_tests -->
+                      <a href="#" panel-name="suite-Parallel_tests" class="show-methods failed suite-Parallel_tests"> (show)</a> <!-- show-methods failed suite-Parallel_tests -->
+                    </span>
+                    <div class="method-list-content failed suite-Parallel_tests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="alex.MyFirstTest" class="method navigator-link" hash-for-method="cosTest(1.0, 0.5403023058681398)">cosTest(1.0, 0.5403023058681398)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="alex.SubTest" class="method navigator-link" hash-for-method="cosTest(-4.34, 2.75, 7.09)">cosTest(-4.34, 2.75, 7.09)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="alex.SqrtTest" class="method navigator-link" hash-for-method="cosTest(3.0, 9.0)">cosTest(3.0, 9.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="alex.PowTest" class="method navigator-link" hash-for-method="ctgTest(2.0, 5.4, 42.22425314473263)">ctgTest(2.0, 5.4, 42.22425314473263)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="alex.divTest" class="method navigator-link" hash-for-method="divTest(6.0, 0.0, 0.0)">divTest(6.0, 0.0, 0.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Parallel_tests -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Parallel_tests" class="hide-methods passed suite-Parallel_tests"> (hide)</a> <!-- hide-methods passed suite-Parallel_tests -->
+                      <a href="#" panel-name="suite-Parallel_tests" class="show-methods passed suite-Parallel_tests"> (show)</a> <!-- show-methods passed suite-Parallel_tests -->
+                    </span>
+                    <div class="method-list-content passed suite-Parallel_tests">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="alex.MyFirstTest" class="method navigator-link" hash-for-method="cosTest(4.0, -0.7568024953079282)">cosTest(4.0, -0.7568024953079282)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="alex.CtgTest" class="method navigator-link" hash-for-method="ctgTest(5.0, 0.9999092042625951)">ctgTest(5.0, 0.9999092042625951)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="alex.DivLongTest" class="method navigator-link" hash-for-method="divTest(6, 3, 2)">divTest(6, 3, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="alex.isPositiveTest" class="method navigator-link" hash-for-method="divTest(6, true)">divTest(6, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="alex.isNegativeTest" class="method navigator-link" hash-for-method="divTest(0, false)">divTest(0, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="alex.multTest" class="method navigator-link" hash-for-method="divTest(2.0, 2.0, 4.0)">divTest(2.0, 2.0, 4.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="alex.MultLongTest" class="method navigator-link" hash-for-method="divTest(4, 2, 8)">divTest(4, 2, 8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Parallel_tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Parallel_tests" class="panel Parallel_tests">
+          <div class="suite-Parallel_tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">alex.MyFirstTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cosTest(1.0, 0.5403023058681398)">
+                  </a> <!-- cosTest(1.0, 0.5403023058681398) -->
+                  <span class="method-name">cosTest</span>
+                  <span class="parameters">(1.0, 0.5403023058681398)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.5403023058681398] but found [0.8414709848078965]
+	at alex.MyFirstTest.cosTest(MyFirstTest.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-failed -->
+          <div class="suite-Parallel_tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">alex.PowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ctgTest(2.0, 5.4, 42.22425314473263)">
+                  </a> <!-- ctgTest(2.0, 5.4, 42.22425314473263) -->
+                  <span class="method-name">ctgTest</span>
+                  <span class="parameters">(2.0, 5.4, 42.22425314473263)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [42.22425314473263] but found [32.0]
+	at alex.PowTest.ctgTest(PowTest.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-failed -->
+          <div class="suite-Parallel_tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">alex.SubTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cosTest(-4.34, 2.75, 7.09)">
+                  </a> <!-- cosTest(-4.34, 2.75, 7.09) -->
+                  <span class="method-name">cosTest</span>
+                  <span class="parameters">(-4.34, 2.75, 7.09)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [7.09] but found [-7.09]
+	at alex.SubTest.cosTest(SubTest.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-failed -->
+          <div class="suite-Parallel_tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">alex.divTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="divTest(6.0, 0.0, 0.0)">
+                  </a> <!-- divTest(6.0, 0.0, 0.0) -->
+                  <span class="method-name">divTest</span>
+                  <span class="parameters">(6.0, 0.0, 0.0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.0] but found [Infinity]
+	at alex.divTest.divTest(divTest.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-failed -->
+          <div class="suite-Parallel_tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">alex.SqrtTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cosTest(3.0, 9.0)">
+                  </a> <!-- cosTest(3.0, 9.0) -->
+                  <span class="method-name">cosTest</span>
+                  <span class="parameters">(3.0, 9.0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [9.0] but found [1.7320508075688772]
+	at alex.SqrtTest.cosTest(SqrtTest.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-failed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">alex.CtgTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ctgTest(5.0, 0.9999092042625951)">
+                  </a> <!-- ctgTest(5.0, 0.9999092042625951) -->
+                  <span class="method-name">ctgTest</span>
+                  <span class="parameters">(5.0, 0.9999092042625951)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">alex.MyFirstTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cosTest(4.0, -0.7568024953079282)">
+                  </a> <!-- cosTest(4.0, -0.7568024953079282) -->
+                  <span class="method-name">cosTest</span>
+                  <span class="parameters">(4.0, -0.7568024953079282)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">alex.isNegativeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="divTest(0, false)">
+                  </a> <!-- divTest(0, false) -->
+                  <span class="method-name">divTest</span>
+                  <span class="parameters">(0, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">alex.isPositiveTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="divTest(6, true)">
+                  </a> <!-- divTest(6, true) -->
+                  <span class="method-name">divTest</span>
+                  <span class="parameters">(6, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">alex.DivLongTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="divTest(6, 3, 2)">
+                  </a> <!-- divTest(6, 3, 2) -->
+                  <span class="method-name">divTest</span>
+                  <span class="parameters">(6, 3, 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">alex.MultLongTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="divTest(4, 2, 8)">
+                  </a> <!-- divTest(4, 2, 8) -->
+                  <span class="method-name">divTest</span>
+                  <span class="parameters">(4, 2, 8)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">alex.multTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="divTest(2.0, 2.0, 4.0)">
+                  </a> <!-- divTest(2.0, 2.0, 4.0) -->
+                  <span class="method-name">divTest</span>
+                  <span class="parameters">(2.0, 2.0, 4.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+        </div> <!-- panel Parallel_tests -->
+        <div panel-name="test-xml-Parallel_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Applications\Eclipse_workspace\TestNGExamples\src\alex\smoke.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Parallel tests&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;cos test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;0.5403023058681398&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;1&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;alex.MyFirstTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- cos test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;sin test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;-0.7568024953079282&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;4&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;alex.MyFirstTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- sin test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;ctg test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;0.9999092042625951&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;5&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;alex.CtgTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ctg test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;div test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;0d&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;6d&quot;/&gt;
+    &lt;parameter name=&quot;y&quot; value=&quot;0d&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;alex.divTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- div test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;div long test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;2&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;6&quot;/&gt;
+    &lt;parameter name=&quot;y&quot; value=&quot;3&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;alex.DivLongTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- div long test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;isPositive test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;true&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;6&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;alex.isPositiveTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- isPositive test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;isNegative test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;false&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;0&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;alex.isNegativeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- isNegative test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;mult double test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;4d&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;2d&quot;/&gt;
+    &lt;parameter name=&quot;y&quot; value=&quot;2d&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;alex.multTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- mult double test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;mult long test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;8&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;4&quot;/&gt;
+    &lt;parameter name=&quot;y&quot; value=&quot;2&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;alex.MultLongTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- mult long test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;pow test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;42.22425314473263&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;2.0&quot;/&gt;
+    &lt;parameter name=&quot;y&quot; value=&quot;5.4&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;alex.PowTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- pow test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;sqrt test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;9&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;3&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;alex.SqrtTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- sqrt test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;sub double test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;7.09&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;-4.34&quot;/&gt;
+    &lt;parameter name=&quot;y&quot; value=&quot;2.75&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;alex.SubTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- sub double test --&gt;
+&lt;/suite&gt; &lt;!-- Parallel tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Parallel_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Parallel tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">cos test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">sin test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ctg test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">div test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">div long test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">isPositive test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">isNegative test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">mult double test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">mult long test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">pow test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">sqrt test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">sub double test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Parallel_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Parallel tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Parallel_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Parallel tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Parallel_tests');
+function tableData_Parallel_tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'ctgTest')
+data.setCell(0, 2, 'alex.CtgTest')
+data.setCell(0, 3, 10);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'cosTest')
+data.setCell(1, 2, 'alex.MyFirstTest')
+data.setCell(1, 3, 10);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'cosTest')
+data.setCell(2, 2, 'alex.MyFirstTest')
+data.setCell(2, 3, 10);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'cosTest')
+data.setCell(3, 2, 'alex.SqrtTest')
+data.setCell(3, 3, 9);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'cosTest')
+data.setCell(4, 2, 'alex.SubTest')
+data.setCell(4, 3, 4);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'divTest')
+data.setCell(5, 2, 'alex.isPositiveTest')
+data.setCell(5, 3, 2);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'divTest')
+data.setCell(6, 2, 'alex.isNegativeTest')
+data.setCell(6, 3, 2);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ctgTest')
+data.setCell(7, 2, 'alex.PowTest')
+data.setCell(7, 3, 2);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'divTest')
+data.setCell(8, 2, 'alex.divTest')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'divTest')
+data.setCell(9, 2, 'alex.DivLongTest')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'divTest')
+data.setCell(10, 2, 'alex.multTest')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'divTest')
+data.setCell(11, 2, 'alex.MultLongTest')
+data.setCell(11, 3, 1);
+window.suiteTableData['Parallel_tests']= { tableData: data, tableDiv: 'times-div-Parallel_tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 53 ms</span>
+              <div id="times-div-Parallel_tests">
+              </div> <!-- times-div-Parallel_tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Parallel_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Parallel tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Parallel_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Parallel_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">alex.MyFirstTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">cosTest(4.0, -0.7568024953079282)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cosTest(1.0, 0.5403023058681398)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">alex.CtgTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ctgTest(5.0, 0.9999092042625951)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">alex.divTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">divTest(6.0, 0.0, 0.0)</span>
+                <span class="method-start">96 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">alex.DivLongTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">divTest(6, 3, 2)</span>
+                <span class="method-start">102 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">alex.isNegativeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">divTest(0, false)</span>
+                <span class="method-start">120 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">alex.isPositiveTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">divTest(6, true)</span>
+                <span class="method-start">121 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">alex.multTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">divTest(2.0, 2.0, 4.0)</span>
+                <span class="method-start">137 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">alex.MultLongTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">divTest(4, 2, 8)</span>
+                <span class="method-start">150 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">alex.PowTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ctgTest(2.0, 5.4, 42.22425314473263)</span>
+                <span class="method-start">159 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">alex.SqrtTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cosTest(3.0, 9.0)</span>
+                <span class="method-start">165 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">alex.SubTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cosTest(-4.34, 2.75, 7.09)</span>
+                <span class="method-start">167 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Parallel tests]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="cos test(failed)">
+    <parameter name="res" value="0.5403023058681398"/>
+    <parameter name="x" value="1"/>
+    <classes>
+      <class name="alex.MyFirstTest">
+        <methods>
+          <include name="cosTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- alex.MyFirstTest -->
+    </classes>
+  </test> <!-- cos test(failed) -->
+  <test thread-count="3" parallel="tests" name="div test(failed)">
+    <parameter name="res" value="0d"/>
+    <parameter name="x" value="6d"/>
+    <parameter name="y" value="0d"/>
+    <classes>
+      <class name="alex.divTest">
+        <methods>
+          <include name="divTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- alex.divTest -->
+    </classes>
+  </test> <!-- div test(failed) -->
+  <test thread-count="3" parallel="tests" name="sub double test(failed)">
+    <parameter name="res" value="7.09"/>
+    <parameter name="x" value="-4.34"/>
+    <parameter name="y" value="2.75"/>
+    <classes>
+      <class name="alex.SubTest">
+        <methods>
+          <include name="cosTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- alex.SubTest -->
+    </classes>
+  </test> <!-- sub double test(failed) -->
+  <test thread-count="3" parallel="tests" name="sqrt test(failed)">
+    <parameter name="res" value="9"/>
+    <parameter name="x" value="3"/>
+    <classes>
+      <class name="alex.SqrtTest">
+        <methods>
+          <include name="cosTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- alex.SqrtTest -->
+    </classes>
+  </test> <!-- sqrt test(failed) -->
+  <test thread-count="3" parallel="tests" name="pow test(failed)">
+    <parameter name="res" value="42.22425314473263"/>
+    <parameter name="x" value="2.0"/>
+    <parameter name="y" value="5.4"/>
+    <classes>
+      <class name="alex.PowTest">
+        <methods>
+          <include name="ctgTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- alex.PowTest -->
+    </classes>
+  </test> <!-- pow test(failed) -->
+</suite> <!-- Failed suite [Parallel tests] -->
